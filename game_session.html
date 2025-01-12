@@ -1,0 +1,54 @@
+<!DOCTYPE html>  
+<html lang="id">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Tebak Gambar Game</title>  
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
+   
+</head>  
+</head>  
+<body>  
+    <div class="container">  
+        <header>  
+            <h1>Tebak Gambar</h1>  
+        </header>  
+        <main>  
+
+            <div id="game" class="game">  
+                <p>Username Anda: <span id="displayUsername"></span></p>
+                <img id="culture-image" class="image" style="display: none;">  
+                <p id="clue_2" class="clue-text" style="display: none;"></p>  
+                <p id="clue_3" class="clue-text" style="display: none;"></p>  
+
+                <input type="text" id="guess" placeholder="Masukkan tebakan..." class="input-field">  
+                <button id="submitGuess" class="button">Kirim Tebakan</button>  
+
+                <p id="result" class="result-text"></p>  
+                <p id="score" class="score-text"></p>  
+                <button id="nextRound" class="button" style="display: none;">Ronde Berikutnya</button>  
+            </div>  
+            <div id="error-message" class="error-message" style="display: none;"></div>   
+        </main>  
+
+        <!-- Tombol clue di luar main -->  
+        <div class="clue-buttons"> 
+            <button id="showClue2" class="clue-button" title="Clue 2">  
+                <i class="fas fa-1"></i> <!-- Ikon untuk Clue 2 -->  
+            </button>  
+            <button id="showClue3" class="clue-button" title="Clue 3">  
+                <i class="fas fa-2"></i> <!-- Ikon untuk Clue 3 -->  
+            </button>  
+        </div>  
+    </div>  
+
+        <footer>  
+            <!-- <p>&copy; 2024 Tebak Gambar. All Rights Reserved.</p>   -->
+        </footer>  
+    </div>  
+    <script src="js/login.js"></script>
+    <script src="js/script.js"></script>  
+</body>  
+</html>

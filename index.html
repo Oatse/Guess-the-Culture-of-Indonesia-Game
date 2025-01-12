@@ -1,0 +1,106 @@
+<!DOCTYPE html>  
+<html lang="id">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Tebak Gambar Game</title>  
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
+   
+</head>  
+</head>  
+<body>  
+    <div class="container">  
+        <header>  
+            <h1>Tebak Gambar</h1>  
+        </header>  
+        <main>  
+            <div id="login" class="login-screen">  
+                <input type="text" id="username" placeholder="Masukkan Username" class="input-field">  
+                <button id="startGame" class="button start-button">
+                    <span class="button-text">Mulai Game</span>
+                    <i class="fas fa-arrow-right button-icon"></i>
+                </button> 
+            </div>  
+
+            
+
+            
+
+            <div id="game" class="game" style="display: none;"> 
+                <div class="timer-container">
+                    <div class="timer-circle">
+                        <span id="timer">60</span>
+                        <span class="timer-label">detik</span>
+                    </div>
+                </div>
+                
+                <p>Username Anda: <span id="displayUsername"></span></p>
+                <img id="culture-image" class="image" style="display: none;">  
+                <p id="clue_2" class="clue-text" style="display: none;"></p>  
+                <p id="clue_3" class="clue-text" style="display: none;"></p>  
+
+                <input type="text" id="guess" placeholder="Masukkan tebakan..." class="input-field">  
+                <button id="submitGuess" class="button">Kirim Tebakan</button>  
+
+                <p id="result" class="result-text"></p>  
+                <p id="score" class="score-text"></p>  
+                <button id="nextRound" class="button" style="display: none;">Ronde Berikutnya</button>  
+            </div>  
+            <div id="error-message" class="error-message" style="display: none;"></div>
+        </main>  
+
+        <!-- Tombol clue di luar main -->  
+        <div class="clue-buttons"> 
+            <button id="showClue2" class="clue-button" title="Clue 2">  
+                <i class="fas fa-1"></i> <!-- Ikon untuk Clue 2 -->  
+            </button>  
+            <button id="showClue3" class="clue-button" title="Clue 3">  
+                <i class="fas fa-2"></i> <!-- Ikon untuk Clue 3 -->  
+            </button>  
+        </div> 
+        
+        <!-- Wrong Answer Popup -->
+        <div id="wrongAnswerPopup" class="popup-overlay">
+            <div class="popup-content">
+                <i class="fas fa-times-circle error-icon"></i>
+                <h2>Tebakan Salah!</h2>
+                <p>Jawaban yang benar adalah: <span id="correctAnswer"></span></p>
+                <div class="score-info">
+                    <p>Skor Anda: <span id="finalScorePopup"></span></p>
+                </div>
+            </div>
+        </div>
+
+
+    </div> 
+    
+
+        <footer>
+            <!-- <p>&copy; 2024 Tebak Gambar. All Rights Reserved.</p>   -->
+        </footer>  
+    </div>  
+
+    <div class="decorative-elements">
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
+        <div class="floating-shape shape6"></div>
+        <div class="floating-shape shape4"></div>
+        <div class="floating-shape shape5"></div>
+        <div class="floating-shape shape7"></div>
+        <div class="floating-shape shape8"></div>
+        <div class="floating-shape shape9"></div>
+        <div class="floating-shape shape10"></div>
+        <div class="floating-shape shape11"></div>
+        <div class="floating-shape shape12"></div>
+        <div class="floating-shape shape13"></div>
+        <div class="floating-shape shape14"></div>
+        <div class="floating-shape shape15"></div>
+    </div>
+ 
+    <script src="js/login.js"></script>  
+    <script src="js/script.js"></script>  
+</body>  
+</html>

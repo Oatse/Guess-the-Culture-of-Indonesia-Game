@@ -1,0 +1,9 @@
+Array
+(
+    [player_id] => 140
+    [session_id] => 241
+    [username] => root
+    [current_score] => 360
+    [score] => 360
+    [round_count] => 36
+)

@@ -1,0 +1,72 @@
+<!DOCTYPE html>  
+<html lang="id">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Score Akhir - Tebak Gambar Game</title>  
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
+</head>  
+<body>  
+    <div class="container final-score-container" id="score-info">  
+        <header class="final-score-header">  
+            <h1><i class="fas fa-trophy trophy-icon"></i> Score Akhir</h1>  
+        </header>  
+        <main>  
+            <div id="scoreDisplay" class="score-card">
+                <div class="player-info">
+                    <i class="fas fa-user-circle avatar"></i>
+                    <h2>Username: <span id="username" class="highlight-text">-</span></h2>
+                </div>
+                
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span id="final-score" class="score-number">-</span>
+                        <span class="score-label">POINTS</span>
+                    </div>
+                </div>
+
+                <div class="achievement">
+                    <i class="fas fa-star star-icon"></i>
+                    <p id="achievement-text">Selamat! Anda telah menyelesaikan permainan</p>
+                </div>
+            </div>  
+
+            <div class="action-buttons">
+                <button id="mainLagi" class="button play-again-btn">
+                    <i class="fas fa-redo"></i> Main Lagi
+                </button>
+                <button id="shareScore" class="button share-btn">
+                    <i class="fas fa-share-alt"></i> Bagikan Skor
+                </button>
+            </div>
+
+            
+        </main>  
+
+        <footer>  
+            <p>© 2024 Tebak Gambar. All Rights Reserved.</p>  
+        </footer>  
+    </div>  
+
+    <div class="decorative-elements">
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
+        <div class="floating-shape shape6"></div>
+        <div class="floating-shape shape4"></div>
+        <div class="floating-shape shape5"></div>
+        <div class="floating-shape shape7"></div>
+        <div class="floating-shape shape8"></div>
+        <div class="floating-shape shape9"></div>
+        <div class="floating-shape shape10"></div>
+        <div class="floating-shape shape11"></div>
+        <div class="floating-shape shape12"></div>
+        <div class="floating-shape shape13"></div>
+        <div class="floating-shape shape14"></div>
+        <div class="floating-shape shape15"></div>
+    </div>
+    <script src="js/final_score.js"></script> 
+</body>  
+</html>
